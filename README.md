@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [source](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [source](https://github.com/fyrfli/social-links)
+- Live Site URL: [live](https://fyrfli.github.io/social-links)
 
 ## My process
 
