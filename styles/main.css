@@ -1,0 +1,160 @@
+/* # Front-end Style Guide */
+
+/* ## Layout */
+
+/* The designs were created to the following widths: */
+
+/* - Mobile: 375px */
+/* - Desktop: 1440px */
+
+/* ## Colors */
+
+/* ### Primary */
+
+/* - Green: hsl(75, 94%, 57%) */
+
+/* ### Neutral */
+
+/* - White: hsl(0, 0%, 100%) */
+/* - Grey: hsl(0, 0%, 20%) */
+/* - Dark Grey: hsl(0, 0%, 12%) */
+/* - Off Black: hsl(0, 0%, 8%) */
+
+/* ## Typography */
+
+/* ### Body Copy */
+
+/* - Font size (paragraph): 14px */
+
+/* ### Font */
+
+/* - Family: [Inter](https://fonts.google.com/specimen/Inter) */
+/* - Weights: 400, 600, 700 */
+
+:root {
+  --green: hsl(75, 94%, 57%);
+
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark_grey: hsl(0, 0%, 12%);
+  --off_black: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  src: url(../assets/fonts/static/Inter-Regular.ttf);
+  font-weight: 400;
+  font-family: Inter;
+}
+
+@font-face {
+  src: url(../assets/fonts/static/Inter-SemiBold.ttf);
+  font-weight: 600;
+  font-family: Inter;
+}
+
+@font-face {
+  src: url(../assets/fonts/static/Inter-Bold.ttf);
+  font-weight: 700;
+  font-family: Inter;
+}
+
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+
+/* min body height */
+body {
+  /* min-height: 90vh; */
+  font-family: Inter;
+  background-color: var(--off_black);
+  color: var(--white);
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.main {
+  margin: 25% auto 5%;
+  max-width: 350px;
+  background-color: var(--dark_grey);
+  border-radius: 12px;
+  padding: 1.2rem 0;
+}
+.hero {
+  width: 124px;
+  height: auto;
+  border-radius: 50%;
+  margin: auto;
+}
+.name {
+  font-size: 1.8rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+.location {
+  color: var(--green);
+  text-align: center;
+  margin: 1rem auto;
+}
+.title {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 2rem auto;
+}
+.links {
+  margin: 1rem 2rem;
+}
+.link {
+  background-color: var(--grey);
+  padding: 1rem 1.4rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+.link:hover {
+  cursor: pointer;
+  background-color: var(--green);
+  color: var(--off_black);
+}
+
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+  /* margin: 1rem auto; */
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 900px) {
+  .main {
+    margin: 15% auto 2%;
+  }
+}
